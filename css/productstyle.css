@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    z-index: 10;
+    background: #DF4970;
+}
+
+header .logo{
+    position: relative;
+    width: 127px;
+    height: 52px;
+    color: #000;
+    text-decoration: none;
+
+}
+
+header .menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+header .menu li{
+    list-style-type: none;
+    margin: 5px 20px
+
+
+}
+header .menu li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+header .menu li a:hover{
+    color: #f8cece;
+
+}
+
+.best{
+    z-index: -1;
+    padding-top: 120px;
+}
+
+.best a{
+    font-size: calc(14px + 1vw);
+    font-weight: 600;
+    padding: 0 34px;
+}
+.grid{
+  padding: 1rem;
+}
+
+.grid{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 1rem;
+}
+
+.product{
+    padding: 10px 20px;
+}
+.gam{
+    position: relative;
+    display: grid;
+    border: 1px solid black;
+    width: 280px;
+    height: 280px;
+
+}
+
+.gam:hover{
+    filter: grayscale(40%);
+    filter: blur(8%);
+
+}
+
+.textdet{
+    position: relative;
+    line-height: 1.5;
+    padding: 1rem 3px;
+}
+
+.detail{
+    display: grid;
+    font-size: 14px;
+    color: #666666;
+
+}
+
+.nama{
+    display: grid;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+.harga{
+    display: grid;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+
+
+footer{
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 90px;
+    z-index: 10;
+    background: #3C3C3C;
+}
+
+footer{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-gap: 1rem;
+}
+
+.logo1{
+    position: relative;
+    display: grid;
+    width: 160px;
+    height: 82px;
+
+}
+
+.footer1{
+    position: relative;
+    display: grid;
+    line-height: 1.5;
+    padding: 1rem 3px;
+}
+
+.open{
+    margin-top: 20px;
+}
+
+.copy{
+    margin-top: 20px;
+    font-size: calc(10px + 1vw);
+    color: #fff;
+}
+
+.contact{
+    margin-top: 10px;
+}
+.footer1 ul p{
+    position: relative;
+    color: #fff;
+    font-weight: 300;
+    font-size: calc(10px + 1vw);;
+
+}
+
+.contacts{
+    margin-bottom: 30px;
+}
+
+.footer1 a{
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+    font-size: calc(14px + 1vw);;
+
+}
+
+
+@media screen and (max-width: 849px){
+    header{
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+
+    .best{
+        z-index: -1;
+        padding-top: 150px;
+    }
+    
+    .best a{
+        font-size: calc(12px + 1vw);
+        font-weight: 600;
+        padding: 0 34px;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .best{
+        z-index: -1;
+        padding-top: 150px;
+    }
+    
+    .best a{
+        font-size: calc(12px + 1vw);
+        font-weight: 600;
+        padding: 0 34px;
+    }
+
+}
+@media screen and (max-width: 572px){
+    header{
+        padding: 1px 1px;
+        flex-direction: column;
+    }
+
+    .best{
+        z-index: -1;
+        padding-top: 150px;
+    }
+    
+    .best a{
+        font-size: calc(14px + 1vw);
+        font-weight: 600;
+        padding: 0 34px;
+    }
+    .product{
+        padding: 10px 20px;
+    }
+    .gam{
+        position: relative;
+        display: grid;
+        border: 1px solid black;
+        width: 280px;
+        height: 280px;
+    
+    }
+    
+    .gam:hover{
+        filter: grayscale(40%);
+        filter: blur(8%);
+    
+    }
+    
+    .textdet{
+        position: relative;
+        line-height: 1.5;
+        padding: 1rem 3px;
+    }
+    
+    .detail{
+        display: grid;
+        font-size: 14px;
+        color: #666666;
+    
+    }
+    
+    .nama{
+        display: grid;
+        font-size: 18px;
+        font-weight: 600;
+        
+    }
+    
+    .harga{
+        display: grid;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    
+}

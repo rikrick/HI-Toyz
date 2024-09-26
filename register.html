@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/registerstyle.css" />
+    <title>HI-Toyz</title>
+  </head>
+  <body>
+    <section>
+      <div class="gam">
+        <img src="../img/regiss.jpg" />
+      </div>
+      <div class="content">
+        <div class="menu">
+          <h2>Register Us</h2>
+          <form
+            id="form"
+            action="index.html"
+            onsubmit="return validatedata()"
+            method="GET"
+            name="form"
+          >
+            <div class="inp">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" />
+              <p id="errorname"></p>
+            </div>
+            <div class="inp">
+              <label for="passwordde">Password</label>
+              <input type="password" id="passwordde" name="password" />
+              <p id="errorpasse"></p>
+            </div>
+            <div class="inp">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" />
+              <p id="erroremail"></p>
+            </div>
+            <div class="inp">
+              <label for="date">Date of birth</label>
+              <input type="date" id="date" name="dob" />
+              <p id="errordate"></p>
+            </div>
+            <div class="agreement">
+              <label for="agree">Agreement to Terms and Conditions</label>
+              <input type="checkbox" id="agree" name="agree" />
+              <p id="erroragree"></p>
+            </div>
+            <div class="inp">
+              <button type="submit">Register</button>
+            </div>
+            <div class="inp">
+              <a href="index.html" class="back">Back</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
